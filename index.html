@@ -1,17 +1,41 @@
-<head>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
+<!DOCTYPE html>
+<html>
+    <head>
 
-<body>
-    <!--Navigation bar-->
-<div id="nav-placeholder">
-
-</div>
-
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <script>
-    $.get("navigation.html", function(data){
-        $("#nav-placeholder").replaceWith(data);
-    });
-    </script>
-</body>
+    </head>
+    
+    <body>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <img src="pictures/Katzcraft_Studios_Logo.png" alt="Katzcraft Studios Logo" with="240" height="150">
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="SocialMedia">
+                        <a href="https://www.youtube.com/channel/UCslJh45ivoesCyBIqHom2iA">Social Media</a>
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                        <li><a href="https://www.youtube.com/channel/UCslJh45ivoesCyBIqHom2iA">YouTube</a></li>
+                        <li><a href="https://www.discord.gg/ekCHh2Kfkn">Discord</a></li>
+                        </ul>
+                    </li>
+                    <li class="Downloads">
+                        <a href="plugins.html">Downloads</a>
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                        <li><a href="plugins.html">Plugins</a></li>
+                        <li><a href="mods.html">Mods</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">About</a></li>
+                </div>
+                </ul>    
+        </div>
+        
+    </body>
+</html>
